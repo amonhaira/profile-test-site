@@ -246,6 +246,82 @@
         display: none;
       }
     }
+    @media (min-width: 1024px) {
+      main > section:first-child {
+        min-height: 900px !important;
+      }
+    }
+    @media (min-width: 1280px) {
+      main > section:first-child {
+        min-height: 880px !important;
+      }
+    }
+    @media (max-width: 767px) {
+      main > section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+      }
+      main > section:first-child {
+        min-height: auto !important;
+        padding-top: 6rem !important;
+        padding-bottom: 3rem !important;
+      }
+      main > section > div > .text-center.mb-16 {
+        margin-bottom: 2.5rem !important;
+      }
+      main > section .gap-12 {
+        gap: 2rem !important;
+      }
+      #history .grid,
+      #menu-grid {
+        gap: 1.5rem !important;
+      }
+      #history .grid > div,
+      .menu-item > div:last-child,
+      #contact .bg-cozy-clay {
+        padding: 1.5rem !important;
+      }
+      .menu-photo {
+        min-height: 190px !important;
+      }
+      .faq-item {
+        padding: 1.25rem !important;
+      }
+      .hero-photo-float {
+        animation: none;
+        max-width: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-photo-float img {
+        max-height: 180px !important;
+      }
+      main > section:first-child h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.05 !important;
+      }
+      main > section:first-child p {
+        font-size: 0.95rem !important;
+        line-height: 1.62 !important;
+      }
+      main > section:first-child .grid.grid-cols-3 {
+        display: none !important;
+      }
+      main > section:first-child .absolute.bottom-6 {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #contact .grid.grid-cols-1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+      #contact .grid.grid-cols-1 > div:first-child {
+        grid-column: 1 / -1;
+      }
+      #contact svg {
+        max-height: 300px !important;
+      }
+    }
     .skip-link {
       position: absolute;
       left: 1rem;
@@ -1076,7 +1152,7 @@
               </a>
               <div class="flex space-x-3">
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-1.5 bg-primary-green/5 hover:bg-gold-crema text-primary-green hover:text-cozy-cream rounded-full transition-all" aria-label="Instagram кофейни Мышка и Мартышка">
-                  <i data-lucide="instagram" class="w-4 h-4"></i>
+                  <i data-lucide="camera" class="w-4 h-4"></i>
                 </a>
               </div>
             </div>
