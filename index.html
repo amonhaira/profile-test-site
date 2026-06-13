@@ -1,9 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мышка и Мартышка | Спешелти Кофейня</title>
+  <title>Мышка и Мартышка - спешелти кофейня в Москве с авторским кофе</title>
+  <meta name="description" content="Спешелти кофейня «Мышка и Мартышка» в Москве: авторские напитки, свежая арабика, фильтр-кофе, ИИ-сомелье, уютный зал и кофе с собой на ул. Кофейных Листьев, 42.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4a5d3c">
+  <link rel="canonical" href="https://amonhaira.github.io/profile-test-site/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234a5d3c'/%3E%3Cpath fill='%23ca9d51' d='M18 24h26v10a12 12 0 0 1-12 12h-2a12 12 0 0 1-12-12V24Zm28 4h2a6 6 0 0 1 0 12h-2v-4h2a2 2 0 0 0 0-4h-2v-4ZM21 18c0-4 4-4 4-8 0 4 4 4 4 8h-8Zm11 0c0-4 4-4 4-8 0 4 4 4 4 8h-8Z'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Мышка и Мартышка">
+  <meta property="og:title" content="Мышка и Мартышка - спешелти кофейня в Москве">
+  <meta property="og:description" content="Авторский кофе, свежая арабика, фильтр, фирменные напитки и уютная кофейная лаборатория на ул. Кофейных Листьев, 42.">
+  <meta property="og:url" content="https://amonhaira.github.io/profile-test-site/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:image:alt" content="Интерьер спешелти кофейни с чашками свежего кофе">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Мышка и Мартышка - спешелти кофейня в Москве">
+  <meta name="twitter:description" content="Авторские напитки, зерно specialty и кофе с собой в уютной московской кофейне.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,12 +85,127 @@
     .animate-warm-pulse {
       animation: warm-pulse 3s infinite ease-in-out;
     }
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      z-index: 100;
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      background: #4a5d3c;
+      color: #faf7ee;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 1rem;
+      outline: 3px solid #ca9d51;
+      outline-offset: 3px;
+    }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ca9d51;
+      outline-offset: 3px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CafeOrCoffeeShop",
+          "@id": "https://amonhaira.github.io/profile-test-site/#coffee-shop",
+          "name": "Мышка и Мартышка",
+          "description": "Спешелти кофейня в Москве с авторскими кофейными напитками, фильтр-кофе, свежей арабикой и кофе с собой.",
+          "url": "https://amonhaira.github.io/profile-test-site/",
+          "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop",
+          "telephone": "+7-999-888-77-66",
+          "priceRange": "260-420 RUB",
+          "servesCuisine": "Specialty coffee",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Кофейных Листьев, 42",
+            "addressLocality": "Москва",
+            "addressCountry": "RU"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.7539,
+            "longitude": 37.6208
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday", "Sunday"],
+              "opens": "09:00",
+              "closes": "23:00"
+            }
+          ],
+          "sameAs": ["https://instagram.com"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://amonhaira.github.io/profile-test-site/#website",
+          "url": "https://amonhaira.github.io/profile-test-site/",
+          "name": "Мышка и Мартышка"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://amonhaira.github.io/profile-test-site/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Можно ли взять кофе с собой?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да, все напитки из меню можно заказать с собой. Бариста подскажут зерно и формат под ваш вкус."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Есть ли авторские напитки без молока?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да, в меню есть эспрессо, фильтр-кофе и холодные напитки на основе specialty-зерна без молока."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Где находится кофейня?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Кофейня находится в Москве по адресу: ул. Кофейных Листьев, 42, ориентир - золотая вывеска."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body class="font-sans antialiased bg-cozy-cream text-dark-bean">
+  <a href="#main-content" class="skip-link">Перейти к содержанию</a>
 
   <!-- 1. HEADER STICKY NAVIGATION -->
-  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-5">
+  <header>
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-5" aria-label="Основная навигация">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -125,7 +257,7 @@
 
         <!-- Mobile Menu Toggle -->
         <div class="md:hidden flex items-center">
-          <button id="mobile-menu-btn" class="text-primary-green focus:outline-none p-1.5 rounded-md hover:bg-gold-crema/10">
+          <button id="mobile-menu-btn" class="text-primary-green focus:outline-none p-1.5 rounded-md hover:bg-gold-crema/10" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -144,6 +276,9 @@
       </div>
     </div>
   </nav>
+  </header>
+
+  <main id="main-content">
 
   <!-- 2. HERO PRESENTATION BLOCK -->
   <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-gradient-to-b from-gold-crema-light/30 via-cozy-cream to-cozy-cream">
@@ -207,7 +342,7 @@
           <div class="relative group max-w-sm sm:max-w-md lg:max-w-full">
             <div class="absolute -inset-2 rounded-2xl bg-gradient-to-r from-gold-crema via-primary-green to-gold-crema opacity-30 blur-lg transition duration-500 group-hover:opacity-50"></div>
             <div class="relative bg-cozy-clay border-4 border-primary-green p-3 rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop" alt="Мышка и Мартышка пьют кофе" class="rounded-lg w-full h-auto object-cover max-h-[480px]">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop" alt="Чашки свежего кофе в спешелти кофейне Мышка и Мартышка" loading="eager" decoding="async" class="rounded-lg w-full h-auto object-cover max-h-[480px]">
               <div class="absolute -bottom-4 -left-4 bg-primary-green text-cozy-cream px-4 py-2 rounded-xl border-2 border-gold-crema shadow-lg rotate-[-4deg]">
                 <p class="text-xs font-mono">Союз Разума и Сердца ☕</p>
               </div>
@@ -220,7 +355,7 @@
 
     <!-- Arrow Down -->
     <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#history" class="w-10 h-10 rounded-full border border-primary-green/20 flex items-center justify-center text-primary-green hover:bg-gold-crema/10 transition-colors">
+      <a href="#history" class="w-10 h-10 rounded-full border border-primary-green/20 flex items-center justify-center text-primary-green hover:bg-gold-crema/10 transition-colors" aria-label="Перейти к истории кофейни">
         <i data-lucide="arrow-down" class="w-5 h-5 text-gold-crema-dark"></i>
       </a>
     </div>
@@ -231,8 +366,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Кто мы такие?</h2>
-        <h3 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">История союза расчетливой Мышки и дикой Мартышки</h3>
+        <p class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Кто мы такие?</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">История союза расчетливой Мышки и дикой Мартышки</h2>
         <p class="mt-4 text-primary-green-light font-sans text-sm">
           Мы верим, что великий кофе наступает на стыке двух миров: абсолютной математической точности и чистого вкусового авантюризма.
         </p>
@@ -245,7 +380,7 @@
           <div class="w-12 h-12 bg-primary-green/10 rounded-xl flex items-center justify-center text-primary-green mb-6 group-hover:bg-primary-green group-hover:text-cozy-cream transition-colors duration-300">
             <i data-lucide="eye" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-display font-bold text-xl text-primary-green mb-3">Точность Мышки</h4>
+          <h3 class="font-display font-bold text-xl text-primary-green mb-3">Точность Мышки</h3>
           <p class="text-primary-green-dark text-sm leading-relaxed mb-6">
             Мышка заведует нашей лабораторией. Она взвешивает каждую порцию молотого зерна с точностью до 0.01 г, вымеряет минерализацию воды до сотых PPM, следит за идеальным профилем экстракции и считает секунды предсмачивания. Благодаря её педантичности ваш кофе всегда идеален.
           </p>
@@ -261,7 +396,7 @@
           <div class="w-12 h-12 bg-primary-green/10 rounded-xl flex items-center justify-center text-primary-green mb-6 group-hover:bg-primary-green group-hover:text-cozy-cream transition-colors duration-300">
             <i data-lucide="compass" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-display font-bold text-xl text-primary-green mb-3">Азарт Мартышки</h4>
+          <h3 class="font-display font-bold text-xl text-primary-green mb-3">Азарт Мартышки</h3>
           <p class="text-primary-green-dark text-sm leading-relaxed mb-6">
             Мартышка — наш вечный искатель приключений. Он летает на фермы Колумбии, Эфиопии и Коста-Рики в поисках диких, экспериментальных анаэробных лотов. Он обожает экзотические ноты личи, маракуйи, жасмина и предлагает космические сочетания фруктовых баз.
           </p>
@@ -277,7 +412,7 @@
           <div class="w-12 h-12 bg-cozy-cream/10 rounded-xl flex items-center justify-center text-gold-crema mb-6">
             <i data-lucide="heart" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-display font-bold text-xl text-gold-crema mb-3">Наш Кофейный Союз</h4>
+          <h3 class="font-display font-bold text-xl text-gold-crema mb-3">Наш Кофейный Союз</h3>
           <p class="text-cozy-cream/85 text-sm leading-relaxed mb-6">
             Без педантичной Мышки великолепные зерна Мартышки превратились бы в хаос. Без бунтарской Мартышки идеальные чашки Мышки были бы скучной рутиной. Объединившись, они создали третью силу — пространство, где любой кофе доказывает, что магия существует.
           </p>
@@ -297,8 +432,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Фирменная Карта</h2>
-        <h3 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Чудеса в Нашей Подаче</h3>
+        <p class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Фирменная карта</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Авторское меню спешелти кофейни</h2>
         <p class="mt-4 text-primary-green-light font-sans text-sm">
           Кофе от Мышки и Мартышки. Нажмите «Озвучить», чтобы наш ИИ-бариста прочитал описание уникальным характером!
         </p>
@@ -306,10 +441,10 @@
 
       <!-- Categories toggler -->
       <div class="flex justify-center flex-wrap gap-2 mb-12">
-        <button onclick="filterMenu('all')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-primary-green text-cozy-cream shadow-md scale-105" data-category="all">Всё меню</button>
-        <button onclick="filterMenu('espresso')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="espresso">Классика</button>
-        <button onclick="filterMenu('milk')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="milk">Молочные</button>
-        <button onclick="filterMenu('special')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="special">Фирменные</button>
+        <button type="button" onclick="filterMenu('all')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-primary-green text-cozy-cream shadow-md scale-105" data-category="all">Всё меню</button>
+        <button type="button" onclick="filterMenu('espresso')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="espresso">Классика</button>
+        <button type="button" onclick="filterMenu('milk')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="milk">Молочные</button>
+        <button type="button" onclick="filterMenu('special')" class="category-tab px-5 py-2 font-display text-xs font-medium rounded-full cursor-pointer uppercase tracking-wider transition-all duration-300 bg-cozy-cream text-primary-green hover:bg-gold-crema/10" data-category="special">Фирменные</button>
       </div>
 
       <!-- Audio playing status bar -->
@@ -324,14 +459,14 @@
         <!-- Item 1 -->
         <div class="menu-item bg-cozy-cream rounded-2xl overflow-hidden border border-primary-green/5 shadow-md flex flex-col sm:flex-row hover:shadow-xl group transition-all duration-300" data-type="espresso">
           <div class="relative w-full sm:w-2/5 min-h-[220px] sm:min-h-full">
-            <img src="https://picsum.photos/seed/dense_espresso/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Espresso">
+            <img src="https://picsum.photos/seed/dense_espresso/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Эспрессо Лесной Мыши из анаэробной Колумбии" loading="lazy" decoding="async">
             <div class="absolute top-3 left-3 bg-primary-green/90 backdrop-blur-sm text-cozy-cream text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">40 мл</div>
           </div>
           <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex justify-between items-start mb-2">
                 <div>
-                  <h4 class="font-display font-bold text-lg text-primary-green leading-tight">Эспрессо Лесной Мыши</h4>
+                  <h3 class="font-display font-bold text-lg text-primary-green leading-tight">Эспрессо Лесной Мыши</h3>
                   <p class="text-[11px] font-mono text-primary-green-light italic tracking-wide uppercase">Woodmouse Espresso</p>
                 </div>
                 <span class="font-display font-black text-lg text-gold-crema-dark shrink-0">260 ₽</span>
@@ -344,7 +479,7 @@
             </div>
             <div class="mt-6 pt-4 border-t border-primary-green/10 flex items-center justify-between">
               <span class="text-[10px] font-mono text-primary-green-light uppercase">Голос: Рассудительная Мышка</span>
-              <button onclick="speakItem('Эспрессо Лесной Мыши. Стоимость 260 рублей. Это кристально чистый кофе Колумбия кока каука с нотами фундука, хвои и брусники.', 'woodmouse')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300">
+              <button type="button" onclick="speakItem('Эспрессо Лесной Мыши. Стоимость 260 рублей. Это кристально чистый кофе Колумбия кока каука с нотами фундука, хвои и брусники.', 'woodmouse')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300" aria-label="Озвучить описание Эспрессо Лесной Мыши">
                 <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
                 <span>Озвучить</span>
               </button>
@@ -355,14 +490,14 @@
         <!-- Item 2 -->
         <div class="menu-item bg-cozy-cream rounded-2xl overflow-hidden border border-primary-green/5 shadow-md flex flex-col sm:flex-row hover:shadow-xl group transition-all duration-300" data-type="milk">
           <div class="relative w-full sm:w-2/5 min-h-[220px] sm:min-h-full">
-            <img src="https://picsum.photos/seed/cozy_cortado/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Cortado">
+            <img src="https://picsum.photos/seed/cozy_cortado/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Банановый кортадо Мартышки с молоком собственного приготовления" loading="lazy" decoding="async">
             <div class="absolute top-3 left-3 bg-primary-green/90 backdrop-blur-sm text-cozy-cream text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">130 мл</div>
           </div>
           <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex justify-between items-start mb-2">
                 <div>
-                  <h4 class="font-display font-bold text-lg text-primary-green leading-tight">Банановый Кортадо Мартышки</h4>
+                  <h3 class="font-display font-bold text-lg text-primary-green leading-tight">Банановый Кортадо Мартышки</h3>
                   <p class="text-[11px] font-mono text-primary-green-light italic tracking-wide uppercase">Monkey Banana Cortado</p>
                 </div>
                 <span class="font-display font-black text-lg text-gold-crema-dark shrink-0">340 ₽</span>
@@ -375,7 +510,7 @@
             </div>
             <div class="mt-6 pt-4 border-t border-primary-green/10 flex items-center justify-between">
               <span class="text-[10px] font-mono text-primary-green-light uppercase">Голос: Игривая Мартышка</span>
-              <button onclick="speakItem('Банановый кортадо мартышки. Стоимость 340 рублей. Двойной шот Эфиопии со взбитым банановым молоком собственного приготовления. Настоящий тропический хит!', 'monkey')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300">
+              <button type="button" onclick="speakItem('Банановый кортадо мартышки. Стоимость 340 рублей. Двойной шот Эфиопии со взбитым банановым молоком собственного приготовления. Настоящий тропический хит!', 'monkey')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300" aria-label="Озвучить описание Бананового Кортадо Мартышки">
                 <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
                 <span>Озвучить</span>
               </button>
@@ -386,14 +521,14 @@
         <!-- Item 3 -->
         <div class="menu-item bg-cozy-cream rounded-2xl overflow-hidden border border-primary-green/5 shadow-md flex flex-col sm:flex-row hover:shadow-xl group transition-all duration-300" data-type="special">
           <div class="relative w-full sm:w-2/5 min-h-[220px] sm:min-h-full">
-            <img src="https://picsum.photos/seed/creamy_cheese_raf/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Cheesy Raf">
+            <img src="https://picsum.photos/seed/creamy_cheese_raf/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Сырный раф с белым чеддером, медом и апельсиновой цедрой" loading="lazy" decoding="async">
             <div class="absolute top-3 left-3 bg-primary-green/90 backdrop-blur-sm text-cozy-cream text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">300 мл</div>
           </div>
           <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex justify-between items-start mb-2">
                 <div>
-                  <h4 class="font-display font-bold text-lg text-primary-green leading-tight">Сырный Раф Повесы</h4>
+                  <h3 class="font-display font-bold text-lg text-primary-green leading-tight">Сырный Раф Повесы</h3>
                   <p class="text-[11px] font-mono text-primary-green-light italic tracking-wide uppercase">Monkey White Cheddar Raf</p>
                 </div>
                 <span class="font-display font-black text-lg text-gold-crema-dark shrink-0">420 ₽</span>
@@ -406,7 +541,7 @@
             </div>
             <div class="mt-6 pt-4 border-t border-primary-green/10 flex items-center justify-between">
               <span class="text-[10px] font-mono text-primary-green-light uppercase">Голос: Игривая Мартышка</span>
-              <button onclick="speakItem('Сырный раф повесы. За 420 рублей. Сливки, сыр белый чеддер, мед, цедра апельсина. Невероятно густо, солоновато и сладко!', 'monkey')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300">
+              <button type="button" onclick="speakItem('Сырный раф повесы. За 420 рублей. Сливки, сыр белый чеддер, мед, цедра апельсина. Невероятно густо, солоновато и сладко!', 'monkey')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300" aria-label="Озвучить описание Сырного Рафа Повесы">
                 <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
                 <span>Озвучить</span>
               </button>
@@ -417,14 +552,14 @@
         <!-- Item 4 -->
         <div class="menu-item bg-cozy-cream rounded-2xl overflow-hidden border border-primary-green/5 shadow-md flex flex-col sm:flex-row hover:shadow-xl group transition-all duration-300" data-type="special">
           <div class="relative w-full sm:w-2/5 min-h-[220px] sm:min-h-full">
-            <img src="https://picsum.photos/seed/cold_brew_coconut/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Cold brew">
+            <img src="https://picsum.photos/seed/cold_brew_coconut/600/450" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Кокосовый колд брю с ананасом и specialty зерном" loading="lazy" decoding="async">
             <div class="absolute top-3 left-3 bg-primary-green/90 backdrop-blur-sm text-cozy-cream text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">350 мл</div>
           </div>
           <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex justify-between items-start mb-2">
                 <div>
-                  <h4 class="font-display font-bold text-lg text-primary-green leading-tight">Напиток Кокосового Разума</h4>
+                  <h3 class="font-display font-bold text-lg text-primary-green leading-tight">Напиток Кокосового Разума</h3>
                   <p class="text-[11px] font-mono text-primary-green-light italic tracking-wide uppercase">Dakka Coconut Cold Brew</p>
                 </div>
                 <span class="font-display font-black text-lg text-gold-crema-dark shrink-0">380 ₽</span>
@@ -437,7 +572,7 @@
             </div>
             <div class="mt-6 pt-4 border-t border-primary-green/10 flex items-center justify-between">
               <span class="text-[10px] font-mono text-primary-green-light uppercase">Голос: Рассудительная Мышка</span>
-              <button onclick="speakItem('Напиток кокосового разума. Стоимость 380 рублей. Фирменный освежающий холодный кофе с кокосовой водой и натуральным ананасом. Космический тонус!', 'woodmouse')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300">
+              <button type="button" onclick="speakItem('Напиток кокосового разума. Стоимость 380 рублей. Фирменный освежающий холодный кофе с кокосовой водой и натуральным ананасом. Космический тонус!', 'woodmouse')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-primary-green hover:bg-gold-crema text-cozy-cream transition-all duration-300" aria-label="Озвучить описание Напитка Кокосового Разума">
                 <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
                 <span>Озвучить</span>
               </button>
@@ -472,8 +607,8 @@
             <h3 class="font-display font-bold text-sm text-primary-green mb-4">Выбрать фото для оценки</h3>
 
             <!-- Standard File input and dropzone -->
-            <div id="dropzone" onclick="triggerFileInput()" class="border-2 border-dashed border-primary-green/20 hover:border-gold-crema/50 bg-cozy-cream/50 rounded-xl p-8 text-center cursor-pointer transition-all duration-300 group">
-              <input type="file" id="image-file-input" class="hidden" accept="image/*" onchange="previewUserImage(event)">
+            <div id="dropzone" onclick="triggerFileInput()" onkeydown="handleDropzoneKey(event)" class="border-2 border-dashed border-primary-green/20 hover:border-gold-crema/50 bg-cozy-cream/50 rounded-xl p-8 text-center cursor-pointer transition-all duration-300 group" role="button" tabindex="0" aria-label="Выбрать фото кофейного напитка для оценки">
+              <input type="file" id="image-file-input" class="hidden" accept="image/*" onchange="previewUserImage(event)" aria-label="Загрузить фото кофейного напитка">
               <div class="w-12 h-12 rounded-full bg-primary-green/5 flex items-center justify-center text-primary-green mx-auto mb-4 group-hover:bg-primary-green group-hover:text-cozy-cream transition-colors duration-300">
                 <i data-lucide="upload" class="w-5 h-5"></i>
               </div>
@@ -483,30 +618,30 @@
 
             <!-- Image visualizer preview -->
             <div id="image-preview-wrapper" class="hidden relative rounded-xl overflow-hidden shadow-inner border border-primary-green/10 bg-cozy-cream p-2">
-              <img id="image-preview-tag" src="" class="w-full h-auto max-h-[300px] object-contain mx-auto rounded" alt="Preview">
-              <button onclick="resetSelectedImage()" class="absolute top-3 right-3 p-2 bg-black/60 hover:bg-black/80 text-white rounded-full"><i data-lucide="refresh-cw" class="w-4 h-4"></i></button>
+              <img id="image-preview-tag" src="" class="w-full h-auto max-h-[300px] object-contain mx-auto rounded" alt="Предпросмотр загруженного фото кофейного напитка">
+              <button type="button" onclick="resetSelectedImage()" class="absolute top-3 right-3 p-2 bg-black/60 hover:bg-black/80 text-white rounded-full" aria-label="Сбросить выбранное изображение"><i data-lucide="refresh-cw" class="w-4 h-4"></i></button>
             </div>
 
             <!-- Action triggering -->
-            <button id="sommelier-submit-btn" onclick="analyzeSelectedImage()" class="w-full mt-5 py-3 text-xs uppercase tracking-wider font-bold text-cozy-cream bg-primary-green hover:bg-gold-crema-dark rounded-full shadow-lg transition-colors hidden h-12">
+            <button id="sommelier-submit-btn" type="button" onclick="analyzeSelectedImage()" class="w-full mt-5 py-3 text-xs uppercase tracking-wider font-bold text-cozy-cream bg-primary-green hover:bg-gold-crema-dark rounded-full shadow-lg transition-colors hidden h-12">
               Оценить чашку!
             </button>
           </div>
 
           <!-- Quick presets sample coffee -->
           <div class="bg-cozy-clay border-2 border-primary-green/10 rounded-2xl p-6 shadow-sm">
-            <h4 class="text-xs uppercase font-mono tracking-wider text-primary-green mb-3">Запустить тест с готовым напитком:</h4>
+            <h3 class="text-xs uppercase font-mono tracking-wider text-primary-green mb-3">Запустить тест с готовым напитком:</h3>
             <div class="grid grid-cols-3 gap-3">
-              <button onclick="testWithSample('https://picsum.photos/seed/latteart/500/500')" class="flex flex-col text-left group">
-                <img src="https://picsum.photos/seed/latteart/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="Latte art">
+              <button type="button" onclick="testWithSample('https://picsum.photos/seed/latteart/500/500')" class="flex flex-col text-left group" aria-label="Проверить пример латте-арта">
+                <img src="https://picsum.photos/seed/latteart/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="Латте-арт для тестовой оценки ИИ-сомелье" loading="lazy" decoding="async">
                 <span class="text-[10px] font-mono mt-1 text-primary-green truncate">Латте-Арт</span>
               </button>
-              <button onclick="testWithSample('https://picsum.photos/seed/pour_over/500/500')" class="flex flex-col text-left group">
-                <img src="https://picsum.photos/seed/pour_over/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="V60 filter">
+              <button type="button" onclick="testWithSample('https://picsum.photos/seed/pour_over/500/500')" class="flex flex-col text-left group" aria-label="Проверить пример фильтр-кофе">
+                <img src="https://picsum.photos/seed/pour_over/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="Фильтр-кофе V60 для тестовой оценки ИИ-сомелье" loading="lazy" decoding="async">
                 <span class="text-[10px] font-mono mt-1 text-primary-green truncate">Фильтр-кофе</span>
               </button>
-              <button onclick="testWithSample('https://picsum.photos/seed/dessert_berry/500/500')" class="flex flex-col text-left group">
-                <img src="https://picsum.photos/seed/dessert_berry/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="Dessert">
+              <button type="button" onclick="testWithSample('https://picsum.photos/seed/dessert_berry/500/500')" class="flex flex-col text-left group" aria-label="Проверить пример десерта">
+                <img src="https://picsum.photos/seed/dessert_berry/500/500" class="w-full aspect-square object-cover rounded-lg border border-primary-green/10 group-hover:scale-105 transition-transform" alt="Ягодный десерт к кофе для тестовой оценки ИИ-сомелье" loading="lazy" decoding="async">
                 <span class="text-[10px] font-mono mt-1 text-primary-green truncate">Десерт</span>
               </button>
             </div>
@@ -518,7 +653,7 @@
           <div class="bg-cozy-clay border-2 border-primary-green/10 rounded-2xl p-6 sm:p-8 min-h-[350px] shadow-sm flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between pb-4 border-b border-primary-green/10 mb-6">
-                <h3 class="font-display font-black text-lg text-primary-green">Вердикт Кофейных Критиков 📃</h3>
+                <h3 class="font-display font-black text-lg text-primary-green">Вердикт кофейных критиков</h3>
                 <span class="text-[10px] font-mono bg-primary-green/5 text-primary-green border border-primary-green/10 px-3 py-1 rounded-full">Gemini 3.1 Pro</span>
               </div>
 
@@ -529,13 +664,13 @@
               </div>
 
               <!-- Response content placeholder -->
-              <div id="sommelier-text-result" class="text-sm text-primary-green-dark leading-relaxed font-sans space-y-4 whitespace-pre-line italic border-l-2 border-gold-crema pl-4">
+              <div id="sommelier-text-result" class="text-sm text-primary-green-dark leading-relaxed font-sans space-y-4 whitespace-pre-line italic border-l-2 border-gold-crema pl-4" aria-live="polite">
                 Загрузите фото капучино или выберите один из образцов слева! Наши ИИ-сомелье Мышка и Мартышка мгновенно оценят качество пенки, экстракцию и дадут весёлое руководство.
               </div>
             </div>
 
             <div class="mt-8 pt-4 border-t border-primary-green/10 flex justify-between text-[11px] font-mono text-primary-green-light">
-              <span>Мортышка: «Больше фруктового азарта!»</span>
+              <span>Мартышка: «Больше фруктового азарта!»</span>
               <span>Мышка: «Математика заваривания вечна.»</span>
             </div>
           </div>
@@ -568,7 +703,7 @@
           
           <div class="relative">
             <input type="text" id="coffee-search-input" placeholder="Например: Чемпионские рецепты воронки V60 или тренды кофе 2025/2026?" class="w-full pl-5 pr-14 py-4 rounded-xl border border-primary-green/15 focus:border-gold-crema focus:ring-1 focus:ring-gold-crema text-sm bg-cozy-cream placeholder-primary-green-light/40 outline-none text-primary-green">
-            <button onclick="submitCoffeeSearch()" class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2.5 bg-primary-green hover:bg-gold-crema text-cozy-cream rounded-lg transition-colors cursor-pointer">
+            <button type="button" onclick="submitCoffeeSearch()" class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2.5 bg-primary-green hover:bg-gold-crema text-cozy-cream rounded-lg transition-colors cursor-pointer" aria-label="Найти ответ на кофейный вопрос">
               <i data-lucide="search" class="w-5 h-5"></i>
             </button>
           </div>
@@ -576,9 +711,9 @@
           <!-- Pop presets -->
           <div class="mt-5 flex flex-wrap gap-2 items-center">
             <span class="text-[11px] font-mono text-primary-green-light uppercase">Нажмите для теста:</span>
-            <button onclick="testSearchPreset('Кофейные тренды спешелти 2025/2026')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Кофейные тренды</button>
-            <button onclick="testSearchPreset('Чемпионский рецепт заваривания воронки V60')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Воронка V60</button>
-            <button onclick="testSearchPreset('Где выращивают редкий сорт кофе Eugenioides')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Редкий Eugenioides</button>
+            <button type="button" onclick="testSearchPreset('Кофейные тренды спешелти 2025/2026')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Кофейные тренды</button>
+            <button type="button" onclick="testSearchPreset('Чемпионский рецепт заваривания воронки V60')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Воронка V60</button>
+            <button type="button" onclick="testSearchPreset('Где выращивают редкий сорт кофе Eugenioides')" class="text-xs bg-cozy-clay text-primary-green-dark border border-primary-green/5 px-3 py-1.5 rounded-full hover:bg-gold-crema/15">Редкий Eugenioides</button>
           </div>
         </div>
 
@@ -599,7 +734,7 @@
           </div>
 
           <!-- Main search text -->
-          <div id="search-data-text" class="text-sm font-sans text-primary-green-dark leading-relaxed whitespace-pre-line"></div>
+          <div id="search-data-text" class="text-sm font-sans text-primary-green-dark leading-relaxed whitespace-pre-line" aria-live="polite"></div>
 
           <!-- Citations Links -->
           <div id="search-sources-wrapper" class="mt-8 pt-6 border-t border-primary-green/10 hidden">
@@ -612,13 +747,84 @@
     </div>
   </section>
 
-  <!-- 7. CONTACTS & ADAPTIVE MAP SECTION -->
+  <!-- 7. TRUST & COMMERCIAL PROOF SECTION -->
+  <section id="trust" class="py-20 bg-cozy-cream relative border-b border-gold-crema/10 scroll-mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Почему нам доверяют</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Спешелти-кофе без случайностей</h2>
+        <p class="mt-4 text-primary-green-light font-sans text-sm">
+          Мы показываем происхождение зерна, честно пишем состав напитков и готовим каждую чашку по стабильному рецепту.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-cozy-clay border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <div class="w-11 h-11 bg-primary-green/10 rounded-xl flex items-center justify-center text-primary-green mb-5">
+            <i data-lucide="badge-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-primary-green mb-2">Зерно с понятным профилем</h3>
+          <p class="text-sm text-primary-green-dark leading-relaxed">Для каждого напитка указываем страну, обработку и вкусовые ноты, чтобы гостю было проще выбрать свою чашку.</p>
+        </article>
+        <article class="bg-cozy-clay border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <div class="w-11 h-11 bg-primary-green/10 rounded-xl flex items-center justify-center text-primary-green mb-5">
+            <i data-lucide="scale" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-primary-green mb-2">Контроль рецепта</h3>
+          <p class="text-sm text-primary-green-dark leading-relaxed">Весы, таймер, чистая вода и регулярная настройка помола помогают держать вкус стабильным утром, днем и вечером.</p>
+        </article>
+        <article class="bg-cozy-clay border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <div class="w-11 h-11 bg-primary-green/10 rounded-xl flex items-center justify-center text-primary-green mb-5">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-primary-green mb-2">Кофе в зале и с собой</h3>
+          <p class="text-sm text-primary-green-dark leading-relaxed">Готовим напитки на месте, собираем заказы навынос и помогаем подобрать зерно для домашнего фильтра или эспрессо.</p>
+        </article>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3 text-xs font-bold uppercase tracking-wider rounded-full text-cozy-cream bg-primary-green hover:bg-primary-green-dark transition-all duration-300">
+          Выбрать напиток
+        </a>
+        <a href="tel:+79998887766" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3 text-xs font-bold uppercase tracking-wider rounded-full border-2 border-primary-green text-primary-green hover:bg-primary-green hover:text-cozy-cream transition-all duration-300">
+          Позвонить в кофейню
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ SECTION -->
+  <section id="faq" class="py-20 bg-cozy-clay relative border-b border-gold-crema/10 scroll-mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">FAQ</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Частые вопросы о кофейне</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="bg-cozy-cream border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <summary class="cursor-pointer font-display font-bold text-primary-green">Можно ли взять кофе с собой?</summary>
+          <p class="mt-3 text-sm text-primary-green-dark leading-relaxed">Да, все напитки из меню можно заказать с собой. Бариста подскажут зерно, температуру и формат под ваш маршрут.</p>
+        </details>
+        <details class="bg-cozy-cream border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <summary class="cursor-pointer font-display font-bold text-primary-green">Есть ли напитки без молока?</summary>
+          <p class="mt-3 text-sm text-primary-green-dark leading-relaxed">Да, в меню есть эспрессо, фильтр-кофе, колд брю и авторские напитки на specialty-зерне без молока.</p>
+        </details>
+        <details class="bg-cozy-cream border border-primary-green/10 rounded-2xl p-6 shadow-sm">
+          <summary class="cursor-pointer font-display font-bold text-primary-green">Где находится «Мышка и Мартышка»?</summary>
+          <p class="mt-3 text-sm text-primary-green-dark leading-relaxed">Мы находимся в Москве по адресу: ул. Кофейных Листьев, 42. Ориентир - золотая вывеска рядом с парком Дубрава.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CONTACTS & ADAPTIVE MAP SECTION -->
   <section id="contact" class="py-24 bg-cozy-cream relative scroll-mt-12 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Где мы находимся?</h2>
-        <h3 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Загляните на Чашку Кофе</h3>
+        <p class="text-xs font-mono uppercase tracking-widest text-gold-crema-dark mb-3">Где мы находимся?</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-primary-green">Контакты кофейни в Москве</h2>
         <p class="mt-4 text-primary-green-light font-sans text-sm">
           Мышка протрёт весы, Мартышка выберет самые безумные зёрна, а вам останется только насладиться напитком в приятной лесной атмосфере.
         </p>
@@ -630,7 +836,7 @@
         <div class="lg:col-span-4 flex flex-col justify-between space-y-6">
           <div class="bg-cozy-clay border-2 border-primary-green/10 rounded-2xl p-6 sm:p-8 flex-1 flex flex-col justify-between shadow-sm">
             <div>
-              <h4 class="font-display font-bold text-xl text-primary-green mb-6">Двери Открыты:</h4>
+              <h3 class="font-display font-bold text-xl text-primary-green mb-6">Двери открыты</h3>
               <div class="space-y-6">
                 <!-- Hours -->
                 <div class="flex items-start">
@@ -663,7 +869,7 @@
                 +7 (999) 888-77-66
               </a>
               <div class="flex space-x-3">
-                <a href="https://instagram.com" target="_blank" class="p-1.5 bg-primary-green/5 hover:bg-gold-crema text-primary-green hover:text-cozy-cream rounded-full transition-all">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-1.5 bg-primary-green/5 hover:bg-gold-crema text-primary-green hover:text-cozy-cream rounded-full transition-all" aria-label="Instagram кофейни Мышка и Мартышка">
                   <i data-lucide="instagram" class="w-4 h-4"></i>
                 </a>
               </div>
@@ -673,7 +879,9 @@
 
         <!-- Custom high-contrast vector Map illustration -->
         <div class="lg:col-span-4 rounded-2xl overflow-hidden border-2 border-primary-green/15 relative bg-primary-green-light/10 flex items-center justify-center p-4">
-          <svg viewBox="0 0 400 400" class="w-full h-full max-h-[350px] opacity-90 transition-transform duration-700 hover:scale-[1.03]" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 400 400" class="w-full h-full max-h-[350px] opacity-90 transition-transform duration-700 hover:scale-[1.03]" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Схема расположения кофейни Мышка и Мартышка</title>
+            <desc id="map-desc">Кофейня находится на пересечении проспекта Арабики и улицы Кофейных Листьев рядом с парком Дубрава.</desc>
             <defs>
               <pattern id="packed-grid" width="40" height="40" patternUnits="userSpaceOnUse">
                 <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ca9d51" stroke-width="0.5" stroke-opacity="0.2" />
@@ -714,7 +922,7 @@
         <!-- Custom Feedback Form -->
         <div class="lg:col-span-4 flex flex-col justify-between">
           <div class="bg-cozy-clay border-2 border-primary-green/10 rounded-2xl p-6 sm:p-8 flex-1 flex flex-col shadow-sm">
-            <h4 class="font-display font-bold text-xl text-primary-green mb-3">Обратная Связь:</h4>
+            <h3 class="font-display font-bold text-xl text-primary-green mb-3">Обратная связь</h3>
             <p class="text-xs text-primary-green-light mb-6">Оставьте весточку для наших усато-хвостатых основателей с вопросом, отзывом или пожеланием.</p>
 
             <div id="contact-success-box" class="hidden flex-1 flex flex-col items-center justify-center text-center p-4 bg-green-50 rounded-xl border border-green-500/10 text-green-800 my-auto">
@@ -726,16 +934,16 @@
             <form id="contact-form" onsubmit="submitFormFeedback(event)" class="space-y-4 flex-1 flex flex-col justify-between">
               <div class="space-y-4">
                 <div>
-                  <label class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Ваше Имя:</label>
-                  <input type="text" id="contact-name" required placeholder="Например: Иван Кофеман" class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green">
+                  <label for="contact-name" class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Ваше имя:</label>
+                  <input type="text" id="contact-name" name="name" autocomplete="name" required placeholder="Например: Иван Кофеман" class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green">
                 </div>
                 <div>
-                  <label class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Электронная Почта:</label>
-                  <input type="email" id="contact-email" required placeholder="coffeelover@mail.ru" class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green">
+                  <label for="contact-email" class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Электронная почта:</label>
+                  <input type="email" id="contact-email" name="email" autocomplete="email" required placeholder="coffeelover@mail.ru" class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green">
                 </div>
                 <div>
-                  <label class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Сообщение:</label>
-                  <textarea id="contact-msg" rows="3" placeholder="Хочу заказать вашу колумбию на дом..." class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green resize-none"></textarea>
+                  <label for="contact-msg" class="block text-[10px] font-mono text-primary-green-light uppercase tracking-wider mb-1 font-semibold">Сообщение:</label>
+                  <textarea id="contact-msg" name="message" rows="3" placeholder="Хочу заказать вашу колумбию на дом..." class="w-full text-xs p-3 rounded-lg border border-primary-green/15 focus:border-gold-crema outline-none bg-cozy-cream text-primary-green resize-none"></textarea>
                 </div>
               </div>
               <button type="submit" class="w-full py-3.5 mt-4 inline-flex items-center justify-center space-x-2 text-xs font-bold uppercase tracking-wider text-cozy-cream bg-primary-green hover:bg-gold-crema-dark rounded-full shadow transition-all duration-300">
@@ -750,7 +958,9 @@
     </div>
   </section>
 
-  <!-- 8. COZY FOOTER -->
+  </main>
+
+  <!-- 10. COZY FOOTER -->
   <footer class="bg-primary-green text-cozy-cream/80 py-12 border-t border-gold-crema/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
@@ -800,6 +1010,9 @@
     const mobileMenu = document.getElementById('mobile-menu');
     mobileBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileBtn.setAttribute('aria-expanded', String(isOpen));
+      mobileBtn.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
     });
 
     // 2. Menu category filtering
@@ -874,6 +1087,13 @@
 
     function triggerFileInput() {
       document.getElementById('image-file-input').click();
+    }
+
+    function handleDropzoneKey(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        triggerFileInput();
+      }
     }
 
     function previewUserImage(event) {
@@ -1019,6 +1239,6 @@
         document.getElementById('contact-success-box').classList.add('hidden');
       }, 5000);
     }
-  </script>
+</script>
 </body>
 </html>
